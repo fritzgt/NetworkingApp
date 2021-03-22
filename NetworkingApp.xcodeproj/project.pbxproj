@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04BC6A2C260602C600C15F51 /* VersionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BC6A2B260602C600C15F51 /* VersionTableViewCell.swift */; };
+		04BC6A2F2608F70F00C15F51 /* NetworkCallAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BC6A2E2608F70F00C15F51 /* NetworkCallAPI.swift */; };
 		CABA990D25DDD6DF000EE695 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABA990C25DDD6DF000EE695 /* AppDelegate.swift */; };
 		CABA991325DDD6E0000EE695 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CABA991225DDD6E0000EE695 /* Assets.xcassets */; };
 		CABA991925DDD6E0000EE695 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CABA991725DDD6E0000EE695 /* LaunchScreen.storyboard */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		04BC6A2B260602C600C15F51 /* VersionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionTableViewCell.swift; sourceTree = "<group>"; };
+		04BC6A2E2608F70F00C15F51 /* NetworkCallAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCallAPI.swift; sourceTree = "<group>"; };
 		CABA990925DDD6DF000EE695 /* NetworkingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CABA990C25DDD6DF000EE695 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CABA991225DDD6E0000EE695 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				CABA992325DDD7FA000EE695 /* XcodeVersionsService.swift */,
+				04BC6A2E2608F70F00C15F51 /* NetworkCallAPI.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				CABA992E25DDDD36000EE695 /* VersionsViewController.swift in Sources */,
 				CABA993625DDE947000EE695 /* UIView+Layout.swift in Sources */,
 				CABA992425DDD7FA000EE695 /* XcodeVersionsService.swift in Sources */,
+				04BC6A2F2608F70F00C15F51 /* NetworkCallAPI.swift in Sources */,
 				CABA993825DDE9CD000EE695 /* VersionsView.swift in Sources */,
 				CABA992A25DDDAC7000EE695 /* XcodeVersion.swift in Sources */,
 				04BC6A2C260602C600C15F51 /* VersionTableViewCell.swift in Sources */,

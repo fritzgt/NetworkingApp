@@ -88,6 +88,7 @@ extension VersionsView {
             spinner.stopAnimating()
         case .failure:
             textLabel.text = "Failure."
+            spinner.stopAnimating()
         default:
             textLabel.text = ""
             spinner.stopAnimating()
@@ -103,6 +104,7 @@ extension VersionsView: UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? VersionTableViewCell else{return UITableViewCell()}
         
         let version = data[indexPath.row]

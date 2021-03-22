@@ -21,17 +21,14 @@ class VersionTableViewCell: UITableViewCell {
     private let versionNameLabel : UILabel = {
     let lbl = UILabel()
     lbl.textColor = .black
-    lbl.font = UIFont.boldSystemFont(ofSize: 24)
+    lbl.font = UIFont.boldSystemFont(ofSize: 16)
     lbl.textAlignment = .center
     return lbl
     }()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
     super.init(style: style, reuseIdentifier: reuseIdentifier)
-
- 
         addSubviewAndEdgeConstraints(versionNameLabel)
-
 }
     
     required init?(coder: NSCoder) {

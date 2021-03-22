@@ -13,7 +13,10 @@ class XcodeVersionsService {
     func fetchVersions(completion: @escaping ([XcodeVersion]?) -> Void) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
             // Source for data in file: https://xcodereleases.com/data.json
-            let fileURL = Bundle.main.url(forResource: "xcode_versions", withExtension: "json")!
+            guard let fileURL = Bundle.main.url(forResource: "xcode_versions", withExtension: "json") else {
+                completion(nil)
+                return
+            }
             
             //Create a catch statement
             let data = try? Data(contentsOf: fileURL)

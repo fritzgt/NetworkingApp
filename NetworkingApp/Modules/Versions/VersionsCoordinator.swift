@@ -19,6 +19,7 @@ class VersionsCoordinator {
     }
 
     private let versionsService = XcodeVersionsService()
+    private let networkCallAPI = NetworkCallAPI()
     private let viewController = VersionsViewController()
  
     
@@ -39,7 +40,8 @@ class VersionsCoordinator {
         //Show state loading
         state = .loading
         print("Loading")
-        versionsService.fetchVersions { [weak self ](data) in
+        networkCallAPI.fetchVersionsFromServer { [weak self ](data) in//Network call
+//        versionsService.fetchVersions { [weak self ](data) in // Local data call
             guard let self = self else {return}
             
             guard let data = data else {
