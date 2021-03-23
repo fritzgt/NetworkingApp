@@ -17,7 +17,8 @@ class VersionsCoordinator {
         case success
         case failure
     }
-
+    
+    //MARK: - Properties
     private let versionsService = XcodeVersionsService()
     private let networkCallAPI = NetworkCallAPI()
     private let viewController = VersionsViewController()
