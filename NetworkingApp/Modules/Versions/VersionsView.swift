@@ -17,7 +17,10 @@ class VersionsView: UIView {
     private let cell = UITableViewCell()
     var data: [XcodeVersion] = []{
         didSet{
-            tableView.reloadData()
+            DispatchQueue.main.async {
+                
+                self.tableView.reloadData()
+            }
         }
     }
 
